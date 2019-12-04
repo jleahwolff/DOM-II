@@ -131,6 +131,13 @@ emailField.addEventListener('focus', () => {
 emailField.style.backgroundColor = 'yellow';  
 });
 //---------------------------------------------------
+//stop Nav ------------------------------------------
+const stopDefault = document.querySelectorAll('.nav a');
+
+stopDefault.addEventListener ('click', () => {
+    stopDefault.preventDefault;
+})
+//---------------------------------------------------
 
 //stretch---
 Draggable.create(document.querySelectorAll('.nav a'), {type: 'x,y'});
